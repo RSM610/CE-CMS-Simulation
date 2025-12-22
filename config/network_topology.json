@@ -1,0 +1,73 @@
+{
+  "simulation": {
+    "duration": 300,
+    "data_generation_interval": 1.0,
+    "attack_start_delay": 30,
+    "attack_duration": 60
+  },
+  "device_layer": {
+    "port": 5000,
+    "esa_enabled": true,
+    "privacy_mode": true,
+    "sensors": {
+      "accelerometer": true,
+      "gyroscope": true,
+      "eye_tracking": true,
+      "head_tracking": true,
+      "haptic_feedback": true
+    },
+    "thresholds": {
+      "anomaly_threshold": 0.7,
+      "behavioral_deviation": 0.5,
+      "motion_limit": 10.0
+    }
+  },
+  "fog_layer": {
+    "port": 6000,
+    "ddos_protection": true,
+    "lateral_movement_blocking": true,
+    "traffic_filtering": true,
+    "network_segmentation": {
+      "metaverse_vlan": "192.168.100.0/24",
+      "iot_vlan": "192.168.101.0/24",
+      "guest_vlan": "192.168.102.0/24"
+    },
+    "rate_limits": {
+      "packets_per_second": 1000,
+      "connections_per_minute": 100
+    }
+  },
+  "cloud_layer": {
+    "port": 7000,
+    "ai_threat_detection": true,
+    "did_verification": true,
+    "blockchain_enabled": false,
+    "threat_intelligence": {
+      "update_interval": 3600,
+      "threat_score_threshold": 0.8
+    }
+  },
+  "attacks": {
+    "chaperone": {
+      "enabled": true,
+      "intensity": "medium",
+      "boundary_manipulation": 2.0
+    },
+    "ddos": {
+      "enabled": true,
+      "packet_rate": 5000,
+      "duration": 30
+    },
+    "identity_spoofing": {
+      "enabled": true,
+      "spoof_rate": 10,
+      "fake_identities": 5
+    }
+  },
+  "metrics": {
+    "collection_interval": 5.0,
+    "log_level": "INFO",
+    "export_format": "csv",
+    "performance_tracking": true
+  }
+}

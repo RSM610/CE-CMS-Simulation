@@ -1,0 +1,92 @@
+services:
+  device:
+    build: ./device_layer
+    container_name: ce_cms_device
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./config:/app/config
+      - ./results:/app/results
+    environment:
+      - LAYER=device
+      - FOG_URL=http://fog:6000
+    networks:
+      - ce_cms_network
+    restart: unless-stopped
+
+  fog:
+    build: ./fog_layer
+    container_name: ce_cms_fog
+    ports:
+      - "6000:6000"
+    volumes:
+      - ./config:/app/config
+      - ./results:/app/results
+    environment:
+      - LAYER=fog
+      - CLOUD_URL=http://cloud:7000
+    depends_on:
+      - device
+    networks:
+      - ce_cms_network
+    restart: unless-stopped
+
+  cloud:
+    build: ./cloud_layer
+    container_name: ce_cms_cloud
+    ports:
+      - "7000:7000"
+    volumes:
+      - ./config:/app/config
+      - ./results:/app/results
+    environment:
+      - LAYER=cloud
+    depends_on:
+      - fog
+    networks:
+      - ce_cms_network
+    restart: unless-stopped
+
+  metrics:
+    build: ./metrics
+    container_name: ce_cms_metrics
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./config:/app/config
+      - ./results:/app/results
+    environment:
+      - LAYER=metrics
+    depends_on:
+      - device
+      - fog
+      - cloud
+    networks:
+      - ce_cms_network
+    restart: unless-stopped
+
+  attacks:
+    build: ./attacks
+    container_name: ce_cms_attacks
+    volumes:
+      - ./config:/app/config
+      - ./results:/app/results
+    environment:
+      - DEVICE_URL=http://device:5000
+      - FOG_URL=http://fog:6000
+      - CLOUD_URL=http://cloud:7000
+    depends_on:
+      - device
+      - fog
+      - cloud
+    networks:
+      - ce_cms_network
+    profiles:
+      - attacks
+
+networks:
+  ce_cms_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

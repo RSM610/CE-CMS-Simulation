@@ -1,0 +1,483 @@
+ce_cms_cloud  | 2025-07-28 11:30:23,836 - INFO - Starting CE-CMS Cloud Layer Server
+ce_cms_cloud  |  * Serving Flask app 'flask_server'
+ce_cms_cloud  |  * Debug mode: off
+ce_cms_cloud  | 2025-07-28 11:30:23,842 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ce_cms_cloud  |  * Running on all addresses (0.0.0.0)
+ce_cms_cloud  |  * Running on http://127.0.0.1:7000
+ce_cms_cloud  |  * Running on http://172.20.0.4:7000
+ce_cms_cloud  | 2025-07-28 11:30:23,842 - INFO - [33mPress CTRL+C to quit[0m
+ce_cms_cloud  | 2025-07-28 11:30:24,089 - INFO - Created DID document for device vr_device_9080
+ce_cms_cloud  | 2025-07-28 11:30:24,090 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:24,091 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:24] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:25,105 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:25,106 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:25] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:26,119 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:26,119 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:26] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:27,132 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:27,133 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:27] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:27,422 - INFO - 127.0.0.1 - - [28/Jul/2025 11:30:27] "GET /health HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:28,144 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:28,145 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:28] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:28,822 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:28] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:28,826 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:28] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:29,157 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:29,157 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:29] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:30,170 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:30,170 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:30] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:31,182 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:31,183 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:31] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:32,198 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:32,199 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:32] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:33,213 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:33,213 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:33] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:33,853 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:33] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:33,857 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:33] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:34,226 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:34,227 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:34] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:35,242 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:35,243 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:35] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:36,257 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:36,257 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:36] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:37,273 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:37,274 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:37] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:38,289 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:38,290 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:38] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:38,886 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:38] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:38,890 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:38] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:39,305 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:39,306 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:39] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:40,317 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:40,318 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:40] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:41,333 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:41,334 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:41] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:42,348 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:42,349 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:42] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:43,363 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:43,364 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:43] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:43,915 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:43] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:43,918 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:43] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:44,379 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:44,380 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:44] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:45,394 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:45,395 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:45] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:46,409 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:46,409 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:46] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:47,424 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:47,425 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:47] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:48,439 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:48,440 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:48] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:48,949 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:48] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:48,953 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:48] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:49,454 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:49,455 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:49] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:50,469 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:50,470 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:50] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:51,486 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:51,487 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:51] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:52,502 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:52,503 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:52] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:53,518 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:53,519 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:53] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:53,982 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:53] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:53,986 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:53] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:54,113 - INFO - 172.20.0.1 - - [28/Jul/2025 11:30:54] "HEAD /health HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:54,533 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:54,534 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:54] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:55,549 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:55,549 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:55] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:56,564 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:56,564 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:56] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:57,533 - INFO - 127.0.0.1 - - [28/Jul/2025 11:30:57] "GET /health HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:57,579 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:57,580 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:57] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:58,594 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:58,595 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:58] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:59,016 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:59] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:59,020 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:59] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:30:59,609 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:30:59,610 - INFO - 172.20.0.3 - - [28/Jul/2025 11:30:59] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:00,626 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:00,627 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:00] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:01,648 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:01,649 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:01] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:02,670 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:02,671 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:02] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:03,690 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:03,691 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:03] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:04,050 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:04] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:04,054 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:04] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:04,706 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:04,706 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:04] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:05,721 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:05,722 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:05] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:06,738 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:06,738 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:06] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:07,752 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:07,753 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:07] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:08,768 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:08,769 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:08] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:09,087 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:09] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:09,091 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:09] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:09,774 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:09,774 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:09] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:10,789 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:10,789 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:10] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:11,804 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:11,805 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:11] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:12,988 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:12,989 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:12] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:14,012 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:14,013 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:14] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:14,115 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:14] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:14,119 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:14] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:15,033 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:15,034 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:15] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:16,054 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:16,055 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:16] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:17,076 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:17,077 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:17] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:18,129 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:18,130 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:18] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:19,153 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:19] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:19,155 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:19,156 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:19] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:19,158 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:19] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:20,176 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:20,176 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:20] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:21,197 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:21,197 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:21] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:22,220 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:22,221 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:22] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:23,241 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:23,242 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:23] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:24,198 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:24] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:24,205 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:24] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:24,290 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:24,290 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:24] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:25,313 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:25,313 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:25] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:26,359 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:26,360 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:26] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:27,379 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:27,380 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:27] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:27,662 - INFO - 127.0.0.1 - - [28/Jul/2025 11:31:27] "GET /health HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:28,401 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:28,402 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:28] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:29,237 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:29] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:29,241 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:29] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:29,422 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:29,423 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:29] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:30,444 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:30,445 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:30] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:31,500 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:31,501 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:31] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:32,521 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:32,522 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:32] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:33,542 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:33,543 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:33] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:34,269 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:34] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:34,275 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:34] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:34,563 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:34,563 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:34] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:35,582 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:35,583 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:35] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:36,603 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:36,604 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:36] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:37,626 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:37,627 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:37] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:38,648 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:38,648 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:38] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:39,304 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:39] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:39,307 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:39] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:39,674 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:39,674 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:39] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:40,697 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:40,698 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:40] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:41,722 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:41,723 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:41] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:42,746 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:42,747 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:42] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:43,768 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:43,769 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:43] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:44,352 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:44] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:44,365 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:44] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:44,790 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:44,791 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:44] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:45,811 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:45,812 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:45] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:46,834 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:46,835 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:46] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:47,855 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:47,856 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:47] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:48,901 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:48,902 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:48] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:49,395 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:49] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:49,399 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:49] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:49,921 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:49,922 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:49] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:50,941 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:50,942 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:50] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:51,961 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:51,962 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:51] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:52,983 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:52,983 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:52] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:54,003 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:54,004 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:54] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:54,442 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:54] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:54,448 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:54] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:55,050 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:55,051 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:55] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:56,096 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:56,096 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:56] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:57,117 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:57,118 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:57] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:57,787 - INFO - 127.0.0.1 - - [28/Jul/2025 11:31:57] "GET /health HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:58,137 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:58,138 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:58] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:59,157 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:31:59,158 - INFO - 172.20.0.3 - - [28/Jul/2025 11:31:59] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:59,477 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:59] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:31:59,481 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:59] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:00,199 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:00,199 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:00] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:01,222 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:01,223 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:01] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:02,244 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:02,244 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:02] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:03,265 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:03,266 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:03] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:04,287 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:04,287 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:04] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:04,509 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:04] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:04,513 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:04] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:05,308 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:05,308 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:05] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:06,334 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:06,335 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:06] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:07,377 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:07,378 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:07] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:08,397 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:08,398 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:08] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:09,441 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:09,442 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:09] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:09,541 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:09] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:09,545 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:09] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:10,465 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:10,466 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:10] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:11,485 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:11,486 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:11] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:12,505 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:12,506 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:12] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:13,526 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:13,527 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:13] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:14,546 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:14,547 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:14] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:14,570 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:14] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:14,573 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:14] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:15,567 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:15,567 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:15] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:16,590 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:16,591 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:16] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:17,609 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:17,610 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:17] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:18,630 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:18,630 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:18] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:19,602 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:19] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:19,606 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:19] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:19,648 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:19,649 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:19] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:20,668 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:20,669 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:20] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:21,748 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:21,749 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:21] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:22,770 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:22,770 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:22] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:23,790 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:23,791 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:23] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:24,634 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:24] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:24,638 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:24] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:24,810 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:24,811 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:24] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:25,857 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:25,857 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:25] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:26,877 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:26,878 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:26] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:27,902 - INFO - 127.0.0.1 - - [28/Jul/2025 11:32:27] "GET /health HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:27,904 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:27,905 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:27] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:28,951 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:28,951 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:28] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:29,667 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:29] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:29,671 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:29] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:29,971 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:29,972 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:29] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:30,991 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:30,991 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:30] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:32,010 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:32,011 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:32] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:33,030 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:33,031 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:33] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:34,051 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:34,051 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:34] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:34,702 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:34] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:34,706 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:34] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:35,070 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:35,070 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:35] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:36,090 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:36,091 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:36] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:37,163 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:37,164 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:37] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:38,184 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:38,185 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:38] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:39,204 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:39,205 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:39] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:39,727 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:39] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:39,731 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:39] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:40,217 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:40,218 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:40] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:41,238 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:41,238 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:41] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:42,259 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:42,260 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:42] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:43,279 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:43,279 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:43] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:44,299 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:44,300 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:44] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:44,765 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:44] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:44,770 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:44] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:45,342 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:45,342 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:45] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:46,365 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:46,366 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:46] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:47,385 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:47,385 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:47] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:48,404 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:48,405 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:48] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:49,424 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:49,425 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:49] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:49,803 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:49] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:49,807 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:49] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:50,468 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:50,468 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:50] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:51,491 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:51,491 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:51] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:52,511 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:52,511 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:52] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:53,531 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:53,531 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:53] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:54,550 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:54,551 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:54] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:54,838 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:54] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:54,842 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:54] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:55,570 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:55,571 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:55] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:56,590 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:56,591 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:56] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:57,634 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:57,635 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:57] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:58,015 - INFO - 127.0.0.1 - - [28/Jul/2025 11:32:58] "GET /health HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:58,655 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:58,655 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:58] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:59,674 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:32:59,675 - INFO - 172.20.0.3 - - [28/Jul/2025 11:32:59] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:59,870 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:59] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:32:59,874 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:59] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:00,718 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:00,718 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:00] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:01,751 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:01,752 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:01] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:02,795 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:02,796 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:02] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:03,815 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:03,815 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:03] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:04,835 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:04,837 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:04] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:04,913 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:04] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:04,918 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:04] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:05,858 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:05,859 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:05] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:06,878 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:06,879 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:06] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:07,899 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:07,900 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:07] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:08,920 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:08,920 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:08] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:09,933 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:09,934 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:09] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:09,944 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:09] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:09,947 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:09] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:10,954 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:10,955 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:10] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:11,976 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:11,976 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:11] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:13,018 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:13,019 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:13] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:14,039 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:14,039 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:14] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:14,979 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:14] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:14,984 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:14] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:15,058 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:15,059 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:15] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:16,078 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:16,079 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:16] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:17,101 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:17,102 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:17] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:18,123 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:18,124 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:18] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:19,171 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:19,172 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:19] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:20,019 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:20] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:20,024 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:20] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:20,219 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:20,220 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:20] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:21,238 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:21,239 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:21] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:22,280 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:22,281 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:22] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:23,300 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:23,301 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:23] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:24,393 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:24,393 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:24] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:25,053 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:25] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:25,057 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:25] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:25,414 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:25,415 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:25] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:26,435 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:26,435 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:26] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:27,455 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:27,456 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:27] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:28,125 - INFO - 127.0.0.1 - - [28/Jul/2025 11:33:28] "GET /health HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:28,497 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:28,498 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:28] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:29,519 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:29,520 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:29] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:30,086 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:30] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:30,090 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:30] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:30,541 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:30,541 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:30] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:31,599 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:31,599 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:31] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:32,628 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:32,629 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:32] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:33,652 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:33,653 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:33] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:34,672 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:34,672 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:34] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:35,120 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:35] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:35,125 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:35] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:35,693 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:35,693 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:35] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:36,711 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:36,712 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:36] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:37,734 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:37,735 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:37] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:38,752 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:38,753 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:38] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:39,771 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:39,772 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:39] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:40,158 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:40] "GET /cloud_status HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:40,164 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:40] "GET /threat_intelligence HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:40,809 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:40,809 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:40] "POST /process_data HTTP/1.1" 200 -
+ce_cms_cloud  | 2025-07-28 11:33:41,827 - ERROR - Threat analysis error: 'NoneType' object has no attribute 'get'
+ce_cms_cloud  | 2025-07-28 11:33:41,828 - INFO - 172.20.0.3 - - [28/Jul/2025 11:33:41] "POST /process_data HTTP/1.1" 200 -

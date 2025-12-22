@@ -1,0 +1,92 @@
+{
+  "topology": {
+    "name": "CE-CMS Consumer Electronics Network",
+    "layers": 3,
+    "devices": {
+      "vr_headset": {
+        "type": "vr",
+        "ip": "192.168.100.10",
+        "capabilities": ["head_tracking", "eye_tracking", "spatial_audio"],
+        "security_level": "high",
+        "esa_enabled": true
+      },
+      "ar_glasses": {
+        "type": "ar",
+        "ip": "192.168.100.11",
+        "capabilities": ["gesture_recognition", "environmental_mapping"],
+        "security_level": "high",
+        "esa_enabled": true
+      },
+      "haptic_gloves": {
+        "type": "haptic",
+        "ip": "192.168.100.12",
+        "capabilities": ["force_feedback", "tactile_simulation"],
+        "security_level": "medium",
+        "esa_enabled": true
+      },
+      "smart_speaker": {
+        "type": "iot",
+        "ip": "192.168.101.20",
+        "capabilities": ["voice_recognition", "audio_output"],
+        "security_level": "low",
+        "esa_enabled": false
+      },
+      "smart_tv": {
+        "type": "iot",
+        "ip": "192.168.101.21",
+        "capabilities": ["video_streaming", "gesture_control"],
+        "security_level": "low",
+        "esa_enabled": false
+      }
+    },
+    "fog_nodes": {
+      "home_router": {
+        "ip": "192.168.1.1",
+        "capabilities": ["traffic_filtering", "ddos_protection", "network_segmentation"],
+        "vlans": ["metaverse", "iot", "guest"]
+      },
+      "edge_gateway": {
+        "ip": "192.168.1.2",
+        "capabilities": ["local_processing", "caching", "security_enforcement"]
+      }
+    },
+    "cloud_services": {
+      "metaverse_platform": {
+        "url": "https://metaverse.example.com",
+        "services": ["identity_management", "asset_storage", "social_features"]
+      },
+      "threat_intelligence": {
+        "url": "https://threat-intel.example.com",
+        "services": ["signature_updates", "behavior_analysis", "global_monitoring"]
+      }
+    }
+  },
+  "security_policies": {
+    "isolation": {
+      "metaverse_devices": ["vr_headset", "ar_glasses", "haptic_gloves"],
+      "iot_devices": ["smart_speaker", "smart_tv"],
+      "cross_vlan_allowed": false
+    },
+    "threat_response": {
+      "auto_quarantine": true,
+      "alert_threshold": 3,
+      "escalation_time": 300
+    }
+  },
+  "data_flows": [
+    {
+      "from": "device_layer",
+      "to": "fog_layer",
+      "protocol": "HTTPS",
+      "encryption": "TLS 1.3",
+      "filtering": true
+    },
+    {
+      "from": "fog_layer",
+      "to": "cloud_layer",
+      "protocol": "HTTPS",
+      "encryption": "TLS 1.3",
+      "compression": true
+    }
+  ]
+}

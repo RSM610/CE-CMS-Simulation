@@ -1,0 +1,92 @@
+ce_cms_device  | 2025-07-28 11:30:23,048 - INFO - ESA initialized for device vr_device_9080
+ce_cms_device  | 2025-07-28 11:30:23,054 - INFO - Starting CE-CMS Device Layer Simulation
+ce_cms_device  | 2025-07-28 11:30:23,056 - INFO - Sensor simulation started for device vr_device_9080
+ce_cms_device  |  * Serving Flask app 'simulate_sensors'
+ce_cms_device  |  * Debug mode: off
+ce_cms_device  | 2025-07-28 11:30:23,069 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ce_cms_device  |  * Running on all addresses (0.0.0.0)
+ce_cms_device  |  * Running on http://127.0.0.1:5000
+ce_cms_device  |  * Running on http://172.20.0.2:5000
+ce_cms_device  | 2025-07-28 11:30:23,070 - INFO - [33mPress CTRL+C to quit[0m
+ce_cms_device  | 2025-07-28 11:30:23,772 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:23] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:30:23,779 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:23] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:30:28,804 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:28] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:30:28,809 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:28] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:30:33,837 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:33] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:30:33,841 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:33] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:30:38,868 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:38] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:30:38,873 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:38] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:30:43,899 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:43] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:30:43,903 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:43] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:30:48,929 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:48] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:30:48,934 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:48] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:30:52,994 - INFO - 172.20.0.1 - - [28/Jul/2025 11:30:52] "HEAD /health HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:30:53,964 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:53] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:30:53,969 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:53] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:30:58,998 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:58] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:30:59,003 - INFO - 172.20.0.5 - - [28/Jul/2025 11:30:59] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:04,032 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:04] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:04,036 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:04] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:09,066 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:09] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:09,073 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:09] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:12,973 - INFO - ESA baseline established for vr_device_9080
+ce_cms_device  | 2025-07-28 11:31:14,093 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:14] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:14,099 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:14] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:19,131 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:19] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:19,135 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:19] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:24,170 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:24] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:24,176 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:24] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:29,217 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:29] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:29,223 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:29] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:34,248 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:34] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:34,253 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:34] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:39,287 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:39] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:39,292 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:39] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:44,326 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:44] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:44,332 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:44] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:49,378 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:49] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:49,382 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:49] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:54,412 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:54] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:54,418 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:54] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:59,460 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:59] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:31:59,464 - INFO - 172.20.0.5 - - [28/Jul/2025 11:31:59] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:04,492 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:04] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:04,496 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:04] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:09,523 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:09] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:09,527 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:09] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:14,555 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:14] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:14,559 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:14] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:19,585 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:19] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:19,589 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:19] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:24,617 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:24] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:24,621 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:24] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:29,650 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:29] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:29,654 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:29] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:34,683 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:34] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:34,687 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:34] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:39,709 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:39] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:39,714 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:39] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:44,743 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:44] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:44,748 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:44] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:49,783 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:49] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:49,787 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:49] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:54,819 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:54] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:54,823 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:54] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:59,853 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:59] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:32:59,857 - INFO - 172.20.0.5 - - [28/Jul/2025 11:32:59] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:33:04,886 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:04] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:33:04,891 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:04] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:33:09,924 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:09] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:33:09,929 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:09] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:33:14,958 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:14] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:33:14,963 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:14] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:33:19,996 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:19] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:33:20,001 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:20] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:33:25,035 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:25] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:33:25,040 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:25] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:33:30,069 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:30] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:33:30,074 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:30] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:33:35,101 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:35] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:33:35,106 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:35] "GET /sensor_data HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:33:40,130 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:40] "GET /esa_status HTTP/1.1" 200 -
+ce_cms_device  | 2025-07-28 11:33:40,139 - INFO - 172.20.0.5 - - [28/Jul/2025 11:33:40] "GET /sensor_data HTTP/1.1" 200 -

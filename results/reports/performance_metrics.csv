@@ -1,0 +1,2 @@
+overall_detection_rate,device_layer_detection_rate,fog_layer_mitigation_rate,cloud_layer_detection_rate,false_positive_rate,average_response_time,system_availability
+2500.0,2500.0,0.0,0.0,2.5,150,98.5
