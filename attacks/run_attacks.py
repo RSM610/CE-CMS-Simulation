@@ -44,7 +44,7 @@ class AttackOrchestrator:
         try:
             with open('/app/config/env.json', 'r') as f:
                 self.config = json.load(f).get('attacks', {})
-        except:
+        except Exception:
             self.config = {
                 "chaperone": {"enabled": True, "intensity": "medium"},
                 "ddos": {"enabled": True, "packet_rate": 5000},
@@ -230,9 +230,8 @@ class AttackOrchestrator:
                 "total_attack_scenarios": len(self.attack_results),
                 "attacks_executed": [k for k in self.attack_results.keys() if k != 'baseline'],
                 "total_simulation_time": sum(
-                    result.get('duration', 0) 
+                    sum(r['duration'] for r in result) if isinstance(result, list) else result.get('duration', 0)
                     for result in self.attack_results.values()
-                    if isinstance(result, dict) and 'duration' in result
                 )
             }
         }
