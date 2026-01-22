@@ -1,0 +1,219 @@
+{
+  "simulation_info": {
+    "start_time": "2026-01-22T07:03:38.967583+00:00",
+    "target_urls": {
+      "device": "http://device:5000",
+      "fog": "http://fog:6000",
+      "cloud": "http://cloud:7000"
+    },
+    "configuration": {
+      "chaperone": {
+        "enabled": true,
+        "intensity": "medium",
+        "boundary_manipulation": 2.0
+      },
+      "ddos": {
+        "enabled": true,
+        "packet_rate": 5000,
+        "duration": 30
+      },
+      "identity_spoofing": {
+        "enabled": true,
+        "spoof_rate": 10,
+        "fake_identities": 5
+      }
+    }
+  },
+  "attack_results": {
+    "baseline": {
+      "duration": 30,
+      "start_time": "2026-01-22T06:58:03.669347+00:00",
+      "end_time": "2026-01-22T06:58:03.669398+00:00",
+      "baseline_established": true
+    },
+    "chaperone": [
+      {
+        "attack_type": "boundary_shrinking",
+        "launch_result": {
+          "status": "attack_launched",
+          "attack_type": "boundary_shrinking",
+          "duration": 20,
+          "danger_level": "high"
+        },
+        "final_stats": {
+          "attack_active": false,
+          "statistics": {
+            "attacks_launched": 4,
+            "malicious_packets_sent": 71,
+            "boundary_manipulations": 44,
+            "collision_risks_created": 12
+          },
+          "available_attacks": [
+            "boundary_shrinking",
+            "boundary_shifting",
+            "boundary_removal",
+            "false_floor"
+          ]
+        },
+        "duration": 25.02626061439514
+      },
+      {
+        "attack_type": "boundary_shifting",
+        "launch_result": {
+          "status": "attack_launched",
+          "attack_type": "boundary_shifting",
+          "duration": 20,
+          "danger_level": "medium"
+        },
+        "final_stats": {
+          "attack_active": false,
+          "statistics": {
+            "attacks_launched": 4,
+            "malicious_packets_sent": 71,
+            "boundary_manipulations": 44,
+            "collision_risks_created": 12
+          },
+          "available_attacks": [
+            "boundary_shrinking",
+            "boundary_shifting",
+            "boundary_removal",
+            "false_floor"
+          ]
+        },
+        "duration": 25.009803533554077
+      },
+      {
+        "attack_type": "false_floor",
+        "launch_result": {
+          "status": "attack_launched",
+          "attack_type": "false_floor",
+          "duration": 20,
+          "danger_level": "high"
+        },
+        "final_stats": {
+          "attack_active": false,
+          "statistics": {
+            "attacks_launched": 4,
+            "malicious_packets_sent": 71,
+            "boundary_manipulations": 44,
+            "collision_risks_created": 12
+          },
+          "available_attacks": [
+            "boundary_shrinking",
+            "boundary_shifting",
+            "boundary_removal",
+            "false_floor"
+          ]
+        },
+        "duration": 25.025946378707886
+      }
+    ],
+    "ddos": [
+      {
+        "attack_type": "volumetric",
+        "launch_result": {
+          "status": "attack_launched",
+          "intensity": "high",
+          "duration": 30,
+          "estimated_pps": 10000.0
+        },
+        "final_stats": {
+          "attack_active": true,
+          "statistics": {
+            "packets_sent": 10177,
+            "requests_per_second": 303.7898448306135,
+            "attack_duration": 33.559072971343994,
+            "source_ips_used": 100
+          },
+          "botnet_size": 100
+        },
+        "duration": 35.033583641052246
+      },
+      {
+        "attack_type": "application_layer",
+        "launch_result": {
+          "status": "attack_launched",
+          "type": "application_layer",
+          "duration": 25
+        },
+        "final_stats": {
+          "attack_active": false,
+          "statistics": {
+            "packets_sent": 10177,
+            "requests_per_second": 303.7898448306135,
+            "attack_duration": 33.559072971343994,
+            "source_ips_used": 100
+          },
+          "botnet_size": 100
+        },
+        "duration": 30.030055046081543
+      }
+    ],
+    "identity_spoofing": {
+      "attack_type": "identity_spoofing",
+      "launch_result": {
+        "status": "attack_launched",
+        "duration": 40
+      },
+      "final_stats": {
+        "attack_active": true,
+        "statistics": {
+          "spoofing_attempts": 9,
+          "fake_identities_created": 9,
+          "credential_forgeries": 9,
+          "successful_impersonations": 9
+        }
+      },
+      "duration": 45.04349064826965
+    },
+    "coordinated": {
+      "attack_type": "coordinated_multi_vector",
+      "chaperone_stats": {
+        "attack_active": false,
+        "statistics": {
+          "attacks_launched": 4,
+          "malicious_packets_sent": 71,
+          "boundary_manipulations": 44,
+          "collision_risks_created": 12
+        },
+        "available_attacks": [
+          "boundary_shrinking",
+          "boundary_shifting",
+          "boundary_removal",
+          "false_floor"
+        ]
+      },
+      "ddos_stats": {
+        "attack_active": false,
+        "statistics": {
+          "packets_sent": 10177,
+          "requests_per_second": 303.7898448306135,
+          "attack_duration": 33.559072971343994,
+          "source_ips_used": 100
+        },
+        "botnet_size": 100
+      },
+      "identity_stats": {
+        "attack_active": true,
+        "statistics": {
+          "spoofing_attempts": 9,
+          "fake_identities_created": 9,
+          "credential_forgeries": 9,
+          "successful_impersonations": 9
+        }
+      },
+      "duration": 35.03870487213135,
+      "simultaneous_attacks": 3
+    }
+  },
+  "overall_statistics": {
+    "total_attack_scenarios": 5,
+    "attacks_executed": [
+      "chaperone",
+      "ddos",
+      "identity_spoofing",
+      "coordinated"
+    ],
+    "total_simulation_time": 250.2078447341919
+  }
+}

@@ -1,0 +1,19 @@
+2026-01-22 05:34:28,672 - INFO - Calculated detection rate: 76.66666666666667% (detected=2300, total=3000)
+2026-01-22 05:34:28,673 - INFO - Calculated detection rate: 85.0% (detected=850, total=1000)
+2026-01-22 05:34:28,673 - INFO - Calculated detection rate: 70.0% (detected=700, total=1000)
+2026-01-22 05:34:28,674 - INFO - Calculated detection rate: 75.0% (detected=750, total=1000)
+2026-01-22 05:34:28,675 - ERROR - Log file results/logs/device.log not found
+2026-01-22 05:34:28,675 - INFO - Calculated detection rate: 1.5% (detected=15, total=1000)
+2026-01-22 05:34:28,676 - ERROR - Error loading attack metrics from results/logs/attacks.log: [Errno 2] No such file or directory: 'results/logs/attacks.log'
+2026-01-22 05:34:28,678 - INFO - Generating ML convergence graphs...
+2026-01-22 05:34:30,116 - INFO - ML convergence graphs generated successfully
+2026-01-22 05:34:30,117 - INFO - Generating performance comparison bars...
+2026-01-22 05:34:31,155 - INFO - Performance comparison bars generated successfully
+2026-01-22 05:34:31,156 - INFO - Generating attack mitigation bars...
+2026-01-22 05:34:31,548 - INFO - Attack mitigation bar chart generated successfully
+2026-01-22 05:34:31,548 - INFO - Generating layer detection rates...
+2026-01-22 05:34:31,562 - INFO - Calculated detection rate: 85.0% (detected=850, total=1000)
+2026-01-22 05:34:31,562 - INFO - Calculated detection rate: 70.0% (detected=700, total=1000)
+2026-01-22 05:34:31,562 - INFO - Calculated detection rate: 75.0% (detected=750, total=1000)
+2026-01-22 05:34:31,910 - INFO - Layer detection rates chart generated successfully
+2026-01-22 05:34:31,919 - INFO - Comprehensive report generated successfully

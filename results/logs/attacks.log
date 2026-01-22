@@ -1,3 +1,0 @@
-ce_cms_attacks  |   File "/app/run_attacks.py", line 277
-ce_cms_attacks  |     def run_full_attack_simulation(self):
-ce_cms_attacks  | IndentationError: expected an indented block
