@@ -1,0 +1,19 @@
+ce_cms_device  | 2026-01-22 08:14:49,588 - WARNING - Fallback config used due to error: 'security_policies'
+ce_cms_device  | 2026-01-22 08:14:49,588 - INFO - ESA initialized for device vr_device_3178
+ce_cms_device  | 2026-01-22 08:14:49,592 - INFO - Starting CE-CMS Device Layer Simulation
+ce_cms_device  | 2026-01-22 08:14:49,594 - INFO - Sensor simulation started for device vr_device_3178
+ce_cms_device  |  * Serving Flask app 'simulate_sensors'
+ce_cms_device  |  * Debug mode: off
+ce_cms_device  | 2026-01-22 08:14:49,605 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ce_cms_device  |  * Running on all addresses (0.0.0.0)
+ce_cms_device  |  * Running on http://127.0.0.1:5000
+ce_cms_device  |  * Running on http://172.20.0.2:5000
+ce_cms_device  | 2026-01-22 08:14:49,605 - INFO - [33mPress CTRL+C to quit[0m
+ce_cms_device  | 2026-01-22 08:14:53,605 - WARNING - Failed to send to fog: HTTPConnectionPool(host='fog', port=6000): Max retries exceeded with url: /device_data (Caused by NameResolutionError("HTTPConnection(host='fog', port=6000): Failed to resolve 'fog' ([Errno -5] No address associated with hostname)"))
+ce_cms_device  | 2026-01-22 08:15:02,618 - WARNING - Failed to send to fog: HTTPConnectionPool(host='fog', port=6000): Max retries exceeded with url: /device_data (Caused by NameResolutionError("HTTPConnection(host='fog', port=6000): Failed to resolve 'fog' ([Errno -5] No address associated with hostname)"))
+ce_cms_device  | 2026-01-22 08:15:11,612 - WARNING - Failed to send to fog: HTTPConnectionPool(host='fog', port=6000): Max retries exceeded with url: /device_data (Caused by NameResolutionError("HTTPConnection(host='fog', port=6000): Failed to resolve 'fog' ([Errno -5] No address associated with hostname)"))
+ce_cms_device  | 2026-01-22 08:15:20,592 - WARNING - Failed to send to fog: HTTPConnectionPool(host='fog', port=6000): Max retries exceeded with url: /device_data (Caused by NameResolutionError("HTTPConnection(host='fog', port=6000): Failed to resolve 'fog' ([Errno -5] No address associated with hostname)"))
+ce_cms_device  | 2026-01-22 08:15:29,572 - WARNING - Failed to send to fog: HTTPConnectionPool(host='fog', port=6000): Max retries exceeded with url: /device_data (Caused by NameResolutionError("HTTPConnection(host='fog', port=6000): Failed to resolve 'fog' ([Errno -5] No address associated with hostname)"))
+ce_cms_device  | 2026-01-22 08:15:38,550 - WARNING - Failed to send to fog: HTTPConnectionPool(host='fog', port=6000): Max retries exceeded with url: /device_data (Caused by NameResolutionError("HTTPConnection(host='fog', port=6000): Failed to resolve 'fog' ([Errno -5] No address associated with hostname)"))
+ce_cms_device  | 2026-01-22 08:15:47,496 - WARNING - Failed to send to fog: HTTPConnectionPool(host='fog', port=6000): Max retries exceeded with url: /device_data (Caused by NameResolutionError("HTTPConnection(host='fog', port=6000): Failed to resolve 'fog' ([Errno -5] No address associated with hostname)"))
+ce_cms_device  | 2026-01-22 08:15:56,467 - WARNING - Failed to send to fog: HTTPConnectionPool(host='fog', port=6000): Max retries exceeded with url: /device_data (Caused by NameResolutionError("HTTPConnection(host='fog', port=6000): Failed to resolve 'fog' ([Errno -5] No address associated with hostname)"))

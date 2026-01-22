@@ -13,6 +13,12 @@ services:
     networks:
       - ce_cms_network
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
 
   fog:
     build: ./fog_layer
@@ -26,10 +32,17 @@ services:
       - LAYER=fog
       - CLOUD_URL=http://cloud:7000
     depends_on:
-      - device
+      device:
+        condition: service_healthy
     networks:
       - ce_cms_network
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:6000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
 
   cloud:
     build: ./cloud_layer
@@ -42,10 +55,17 @@ services:
     environment:
       - LAYER=cloud
     depends_on:
-      - fog
+      fog:
+        condition: service_healthy
     networks:
       - ce_cms_network
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
 
   metrics:
     build: ./metrics
@@ -57,13 +77,25 @@ services:
       - ./results:/app/results
     environment:
       - LAYER=metrics
+      - DEVICE_URL=http://device:5000
+      - FOG_URL=http://fog:6000
+      - CLOUD_URL=http://cloud:7000
     depends_on:
-      - device
-      - fog
-      - cloud
+      device:
+        condition: service_healthy
+      fog:
+        condition: service_healthy
+      cloud:
+        condition: service_healthy
     networks:
       - ce_cms_network
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
 
   attacks:
     build: ./attacks
@@ -76,9 +108,34 @@ services:
       - FOG_URL=http://fog:6000
       - CLOUD_URL=http://cloud:7000
     depends_on:
-      - device
-      - fog
-      - cloud
+      device:
+        condition: service_healthy
+      fog:
+        condition: service_healthy
+      cloud:
+        condition: service_healthy
+      metrics:
+        condition: service_healthy
+    networks:
+      - ce_cms_network
+    profiles:
+      - attacks
+
+  shutdown_monitor:
+    build: ./metrics
+    container_name: ce_cms_shutdown
+    volumes:
+      - ./config:/app/config
+      - ./results:/app/results
+    environment:
+      - DEVICE_URL=http://device:5000
+      - METRICS_URL=http://metrics:8000
+    command: python shutdown_simulation.py
+    depends_on:
+      attacks:
+        condition: service_started
+      metrics:
+        condition: service_healthy
     networks:
       - ce_cms_network
     profiles:

@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """
-CE-CMS Chaperone Attack Simulation
+CE-CMS Chaperone Attack Simulation - FIXED WITH LOGGING
 Simulates VR boundary manipulation attacks that can cause physical harm
 """
-
 import json
 import time
 import random
@@ -12,12 +11,22 @@ import threading
 import logging
 from datetime import datetime, timezone
 import numpy as np
+import os
 
+# Configure logging to write to file
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('/app/results/logs/attacks.log'),
+        logging.StreamHandler()
+    ]
+)
 logger = logging.getLogger(__name__)
 
 class ChaperoneAttacker:
     """Simulates chaperone boundary manipulation attacks"""
-    
+   
     def __init__(self, target_device_url):
         self.target_url = target_device_url
         self.attack_active = False
@@ -25,42 +34,44 @@ class ChaperoneAttacker:
             "attacks_launched": 0,
             "malicious_packets_sent": 0,
             "boundary_manipulations": 0,
-            "collision_risks_created": 0
+            "collision_risks_created": 0,
+            "attacks_detected": 0,
+            "attacks_blocked": 0
         }
-        
+       
         # Attack parameters
         self.attack_types = {
             "boundary_shrinking": {
                 "description": "Shrink VR boundaries to cause collisions",
-                "boundary_scale": 0.3,  # 30% of original size
+                "boundary_scale": 0.3,
                 "danger_level": "high"
             },
             "boundary_shifting": {
                 "description": "Shift boundaries to unsafe areas",
-                "boundary_offset": 2.0,  # 2 meters offset
+                "boundary_offset": 2.0,
                 "danger_level": "medium"
             },
             "boundary_removal": {
                 "description": "Remove safety boundaries entirely",
-                "boundary_scale": 0.0,  # No boundaries
+                "boundary_scale": 0.0,
                 "danger_level": "critical"
             },
             "false_floor": {
                 "description": "Create false floor height perception",
-                "floor_offset": 0.5,  # 50cm height difference
+                "floor_offset": 0.5,
                 "danger_level": "high"
             }
         }
-    
+   
     def generate_malicious_boundary_data(self, attack_type="boundary_shrinking"):
         """Generate malicious boundary manipulation data"""
         attack_config = self.attack_types.get(attack_type, self.attack_types["boundary_shrinking"])
-        
+       
         # Base legitimate boundary data
         boundary_data = {
             "boundary_type": "rectangular",
             "corners": [
-                {"x": -2.0, "y": 0.0, "z": -1.5},  # Normal 4x3 meter play area
+                {"x": -2.0, "y": 0.0, "z": -1.5},
                 {"x": 2.0, "y": 0.0, "z": -1.5},
                 {"x": 2.0, "y": 0.0, "z": 1.5},
                 {"x": -2.0, "y": 0.0, "z": 1.5}
@@ -69,26 +80,26 @@ class ChaperoneAttacker:
             "ceiling_height": 3.0,
             "safety_margin": 0.5
         }
-        
+       
         # Apply malicious modifications
         if attack_type == "boundary_shrinking":
             scale = attack_config["boundary_scale"]
             for corner in boundary_data["corners"]:
                 corner["x"] *= scale
                 corner["z"] *= scale
-                
+               
         elif attack_type == "boundary_shifting":
             offset = attack_config["boundary_offset"]
             for corner in boundary_data["corners"]:
-                corner["x"] += offset  # Shift towards wall/obstacle
-                
+                corner["x"] += offset
+               
         elif attack_type == "boundary_removal":
-            boundary_data["corners"] = []  # Remove all boundaries
+            boundary_data["corners"] = []
             boundary_data["safety_margin"] = 0.0
-            
+           
         elif attack_type == "false_floor":
             boundary_data["floor_height"] = attack_config["floor_offset"]
-            
+           
         return {
             "packet_id": f"chaperone_attack_{int(time.time() * 1000)}",
             "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -162,64 +173,88 @@ class ChaperoneAttacker:
         }
         
         return collision_packet
-    
+   
     def launch_chaperone_attack(self, attack_type="boundary_shrinking", duration=30):
         """Launch a chaperone attack"""
         if self.attack_active:
             return {"status": "attack_already_active"}
-        
+       
         self.attack_active = True
         self.attack_stats["attacks_launched"] += 1
-        
-        attack_config = self.attack_types[attack_type]
-        
-        logger.warning(f"Launching chaperone attack: {attack_type}")
+       
+        attack_config = self.attack_types.get(attack_type, self.attack_types["boundary_shrinking"])
+       
+        logger.warning(f"Chaperone attack launched: {attack_type}")
         logger.warning(f"Description: {attack_config['description']}")
         logger.warning(f"Danger Level: {attack_config['danger_level']}")
-        
+       
         def attack_thread():
             start_time = time.time()
-            
+           
             while time.time() - start_time < duration and self.attack_active:
                 try:
                     # Send malicious boundary data
                     boundary_packet = self.generate_malicious_boundary_data(attack_type)
-                    self._send_attack_packet(boundary_packet)
+                    response = self._send_attack_packet(boundary_packet)
                     self.attack_stats["boundary_manipulations"] += 1
-                    
+                   
+                    # Log detection for boundary packet
+                    if response:
+                        if response.get("blocked"):
+                            self.attack_stats["attacks_blocked"] += 1
+                            logger.info(f"Chaperone attack blocked by defense system")
+                        elif response.get("detected"):
+                            self.attack_stats["attacks_detected"] += 1
+                            logger.info(f"Chaperone attack detected by defense system")
+
                     # Add spatial confusion
                     if random.random() < 0.3:  # 30% chance
                         confusion_packet = self.inject_spatial_confusion()
-                        self._send_attack_packet(confusion_packet)
+                        response = self._send_attack_packet(confusion_packet)
+                        # Log detection for confusion packet
+                        if response:
+                            if response.get("blocked"):
+                                self.attack_stats["attacks_blocked"] += 1
+                                logger.info(f"Spatial confusion attack blocked by defense system")
+                            elif response.get("detected"):
+                                self.attack_stats["attacks_detected"] += 1
+                                logger.info(f"Spatial confusion attack detected by defense system")
                     
                     # Create collision risks
                     if random.random() < 0.2:  # 20% chance
                         collision_packet = self.create_collision_risk_scenario()
-                        self._send_attack_packet(collision_packet)
+                        response = self._send_attack_packet(collision_packet)
                         self.attack_stats["collision_risks_created"] += 1
-                    
-                    time.sleep(random.uniform(1, 3))  # Random intervals
-                    
+                        # Log detection for collision packet
+                        if response:
+                            if response.get("blocked"):
+                                self.attack_stats["attacks_blocked"] += 1
+                                logger.info(f"Collision risk attack blocked by defense system")
+                            elif response.get("detected"):
+                                self.attack_stats["attacks_detected"] += 1
+                                logger.info(f"Collision risk attack detected by defense system")
+                   
+                    time.sleep(random.uniform(1, 3))
+                   
                 except Exception as e:
                     logger.error(f"Attack packet send error: {e}")
                     time.sleep(1)
-            
+           
             self.attack_active = False
-            logger.info(f"Chaperone attack {attack_type} completed")
-        
+            logger.info(f"Chaperone attack {attack_type} completed - Stats: {self.attack_stats}")
+       
         threading.Thread(target=attack_thread, daemon=True).start()
-        
+       
         return {
             "status": "attack_launched",
             "attack_type": attack_type,
             "duration": duration,
             "danger_level": attack_config["danger_level"]
         }
-    
+   
     def _send_attack_packet(self, packet):
         """Send malicious packet to target device"""
         try:
-            # Try to send to device layer
             response = requests.post(
                 f"{self.target_url}/inject_anomaly",
                 json={
@@ -229,23 +264,31 @@ class ChaperoneAttacker:
                 },
                 timeout=5
             )
-            
+           
             self.attack_stats["malicious_packets_sent"] += 1
-            
+           
             if response.status_code != 200:
                 logger.debug(f"Attack packet rejected: {response.status_code}")
-            
+                return {"blocked": True}
+            else:
+                result = response.json()
+                return {
+                    "detected": result.get("detection_result", {}).get("anomaly_detected", False),
+                    "blocked": result.get("detection_result", {}).get("threat_level") in ["high", "critical"]
+                }
+           
         except requests.exceptions.RequestException as e:
             logger.debug(f"Could not send attack packet: {e}")
-    
+            return None
+   
     def stop_attack(self):
         """Stop current attack"""
         if not self.attack_active:
             return {"status": "no_active_attack"}
-        
+       
         self.attack_active = False
         return {"status": "attack_stopped"}
-    
+   
     def get_attack_stats(self):
         """Get attack statistics"""
         return {
@@ -357,7 +400,6 @@ class ChaperoneDefenseValidator:
 
 # Example usage for testing
 if __name__ == "__main__":
-    import os
     
     # Get target URLs from environment
     device_url = os.getenv('DEVICE_URL', 'http://localhost:5000')

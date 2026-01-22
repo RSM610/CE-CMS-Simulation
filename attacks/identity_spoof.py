@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-CE-CMS Identity Spoofing Attack Simulation
+CE-CMS Identity Spoofing Attack Simulation - COMPLETE WITH LOGGING
 Simulates identity spoofing and impersonation attacks
 """
 
@@ -13,6 +13,15 @@ import logging
 from datetime import datetime, timezone
 import hashlib
 
+# Configure logging to write to file
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('/app/results/logs/attacks.log'),
+        logging.StreamHandler()
+    ]
+)
 logger = logging.getLogger(__name__)
 
 class IdentitySpoofingAttacker:
@@ -26,7 +35,9 @@ class IdentitySpoofingAttacker:
             "spoofing_attempts": 0,
             "fake_identities_created": 0,
             "credential_forgeries": 0,
-            "successful_impersonations": 0
+            "successful_impersonations": 0,
+            "attacks_detected": 0,
+            "attacks_blocked": 0
         }
         
     def create_fake_identity(self, target_device_id):
@@ -80,7 +91,7 @@ class IdentitySpoofingAttacker:
             return {"status": "attack_already_active"}
         
         self.attack_active = True
-        logger.warning("Launching identity spoofing attack")
+        logger.warning("Identity spoofing attack launched")
         
         def attack_thread():
             start_time = time.time()
@@ -88,22 +99,26 @@ class IdentitySpoofingAttacker:
             
             while time.time() - start_time < duration and self.attack_active:
                 try:
-                    # Select random target
                     target_device = random.choice(target_devices)
                     
-                    # Create fake identity
                     fake_identity = self.create_fake_identity(target_device)
-                    
-                    # Forge credentials
                     forged_cred = self.forge_credentials(fake_identity)
                     
-                    # Attempt to register fake identity
-                    self._attempt_identity_registration(fake_identity, forged_cred)
-                    
-                    # Attempt to verify fake identity
+                    detection_results = self._attempt_identity_registration(fake_identity, forged_cred)
                     self._attempt_identity_verification(fake_identity)
                     
                     self.attack_stats["spoofing_attempts"] += 1
+                    
+                    # Track detection
+                    if detection_results.get("blocked"):
+                        self.attack_stats["attacks_blocked"] += 1
+                        logger.info(f"Identity spoofing blocked by defense system")
+                    elif detection_results.get("detected"):
+                        self.attack_stats["attacks_detected"] += 1
+                        logger.info(f"Identity spoofing detected by defense system")
+                    elif detection_results.get("success"):
+                        self.attack_stats["successful_impersonations"] += 1
+                        logger.warning(f"Identity spoofing succeeded: {fake_identity['device_id']}")
                     
                     time.sleep(random.uniform(5, 15))
                     
@@ -112,7 +127,7 @@ class IdentitySpoofingAttacker:
                     time.sleep(5)
             
             self.attack_active = False
-            logger.info("Identity spoofing attack completed")
+            logger.info(f"Identity spoofing attack completed - Stats: {self.attack_stats}")
         
         threading.Thread(target=attack_thread, daemon=True).start()
         return {"status": "attack_launched", "duration": duration}
@@ -120,7 +135,6 @@ class IdentitySpoofingAttacker:
     def _attempt_identity_registration(self, fake_identity, forged_credential):
         """Attempt to register fake identity"""
         try:
-            # Try to register with cloud layer
             response = requests.post(
                 f"{self.cloud_url}/verify_identity",
                 json={
@@ -131,19 +145,23 @@ class IdentitySpoofingAttacker:
                 timeout=5
             )
             
-            if response.status_code == 200:
+            if response.status_code == 403:
+                return {"blocked": True}
+            elif response.status_code == 200:
                 result = response.json()
                 if result.get("verified", False):
-                    self.attack_stats["successful_impersonations"] += 1
-                    logger.warning(f"Successful identity spoofing: {fake_identity['device_id']}")
+                    return {"success": True}
+                else:
+                    return {"detected": True}
+            else:
+                return {"detected": True}
             
         except requests.exceptions.RequestException:
-            pass  # Expected to fail due to security measures
+            return {"blocked": True}
     
     def _attempt_identity_verification(self, fake_identity):
         """Attempt identity verification with fake data"""
         try:
-            # Send fake sensor data to device layer
             fake_sensor_data = {
                 "packet_id": f"spoofed_packet_{int(time.time())}",
                 "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -153,17 +171,20 @@ class IdentitySpoofingAttacker:
                     "sensor_type": "accelerometer",
                     "data": {"x": 0.1, "y": 0.1, "z": 9.8}
                 }],
-                "malicious": True
+                "malicious": True,
+                "attack_type": "identity_spoofing"
             }
             
-            requests.post(
+            response = requests.post(
                 f"{self.device_url}/inject_anomaly",
                 json={"type": "identity", "packet": fake_sensor_data},
                 timeout=5
             )
             
+            return response.status_code == 200
+            
         except requests.exceptions.RequestException:
-            pass
+            return False
     
     def stop_attack(self):
         """Stop spoofing attack"""
